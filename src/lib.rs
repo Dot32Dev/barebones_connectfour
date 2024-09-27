@@ -14,7 +14,7 @@
 
 pub struct Bitboard {
     // Each player has a u64 with each set bit corresponding to a placed piece.
-    players: [u64; 2],
+    pub players: [u64; 2],
 
     // Stores the bit index of the highest piece in any given column, plus one.
     // This is necessary to know where pieces will land in a move.
